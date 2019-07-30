@@ -30,11 +30,18 @@ public class Portfolio {
         System.out.println("++++++++++\nIngresa un día del 1 al 30: ");
         Scanner input = new Scanner(System.in);
         int date_1_number = input.nextInt();
-        System.out.println("++++++++++\nIngresa otro día del 1 al 30: ");
-        int date_2_number = input.nextInt();
-        System.out.println("Este es el valor de tus stocks al " + (date_1_number) + " del mes actual: " + stockForDates.get(date_1_number - 1));
-        System.out.println("Este es el valor de tus stocks al " + (date_2_number) + " del mes actual: " + stockForDates.get(date_2_number - 1));
-        stockOperation(stockForDates.get(date_1_number - 1), stockForDates.get(date_2_number - 1));
+
+        if (date_1_number > 0 && date_1_number != 0) {
+            System.out.println("++++++++++\nIngresa otro día del 1 al 30: ");
+            int date_2_number = input.nextInt();
+            System.out.println("Este es el valor de tus stocks al " + (date_1_number) + " del mes actual: " + stockForDates.get(date_1_number - 1));
+            System.out.println("Este es el valor de tus stocks al " + (date_2_number) + " del mes actual: " + stockForDates.get(date_2_number - 1));
+            stockOperation(stockForDates.get(date_1_number - 1), stockForDates.get(date_2_number - 1));
+        } else {
+            System.out.println("Sólo ingresa numeros entre 1 y 30");
+        }
+
+
 
     }
 
