@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+            <state relative-caret-position="541">
+              <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#228#239#0" expanded="true" />
@@ -205,13 +205,13 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24949698" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.4942991" weight="0.27009645" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49899396" weight="0.329582" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5057009" side_tool="true" visible="true" weight="0.329582" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.49161637" weight="0.27009645" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49832326" weight="0.329582" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50838363" side_tool="true" visible="true" weight="0.329582" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.329582" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.4942991" visible="true" weight="0.329582" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49161637" visible="true" weight="0.329582" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3995177" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -277,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+        <state relative-caret-position="541">
+          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#228#239#0" expanded="true" />
