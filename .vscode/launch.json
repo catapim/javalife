@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Hola",
+            "request": "launch",
+            "mainClass": "Hola"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Portfolio",
+            "request": "launch",
+            "mainClass": "Portfolio"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RadioMethod",
+            "request": "launch",
+            "mainClass": "RadioMethod"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ventas",
+            "request": "launch",
+            "mainClass": "Ventas"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App",
+            "request": "launch",
+            "mainClass": "aID.App"
+        }
+    ]
+}
