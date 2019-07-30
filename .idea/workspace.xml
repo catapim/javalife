@@ -43,13 +43,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+            <state relative-caret-position="285">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#228#239#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#147#158#0" expanded="true" />
+                <element signature="e#256#267#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,9 +80,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="916" />
+    <option name="x" value="462" />
     <option name="y" value="24" />
-    <option name="width" value="1533" />
+    <option name="width" value="1987" />
     <option name="height" value="1336" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -194,8 +197,17 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="916" y="24" width="1533" height="1336" extended-state="0" />
+    <frame x="462" y="24" width="1987" height="1336" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -203,19 +215,20 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24949698" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19125964" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49161637" weight="0.27009645" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49832326" weight="0.329582" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50838363" side_tool="true" visible="true" weight="0.329582" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.4838046" weight="0.27009645" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4976526" weight="0.329582" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5167095" side_tool="true" visible="true" weight="0.329582" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" weight="0.329582" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49161637" visible="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Debug" order="6" weight="0.3995177" />
+      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49966466" weight="0.329582" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.4832905" visible="true" weight="0.329582" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49966466" weight="0.3995177" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49966466" weight="0.329582" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.040616967" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -225,6 +238,9 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/homework$Portfolio.ic" NAME="Portfolio Coverage Results" MODIFIED="1564524739289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Ventas.java">
@@ -277,13 +293,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+        <state relative-caret-position="285">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#228#239#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#147#158#0" expanded="true" />
+            <element signature="e#256#267#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
           </folding>
         </state>
       </provider>

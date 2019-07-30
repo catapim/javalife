@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Portfolio {
@@ -6,23 +7,28 @@ public class Portfolio {
     //variables de objeto
     static ArrayList < Integer > stocks = new ArrayList < Integer > ();
 
+    static ArrayList < ArrayList > year = new ArrayList <ArrayList> ();
     //llena 1 mes de stocks
     public void fillingStocks(int price) {
         stocks.add(price);
     }
 
-    void randomInRange() {
-        for (int i = 0; i < 31; i++) {
-            double randomDouble = Math.random();
-            randomDouble = randomDouble * 50 + 10000;
-            int randomInteger = (int) randomDouble;
-            fillingStocks(randomInteger);
-            //            System.out.print("día " + i);
-        }
-        System.out.println(stocks);
+    public void fillingYear(ArrayList stockForArray) {
+        year.add(stockForArray);
     }
 
-    void Price(ArrayList < Integer > stockForDates) {
+    void randomInRange() {
+
+            for (int i = 0; i < 31; i++) {
+                double randomDouble = Math.random();
+                randomDouble = randomDouble * 900 + 10000;
+                int randomInteger = (int) randomDouble;
+                fillingStocks(randomInteger);
+            }
+            System.out.println(stocks);
+    }
+
+    void price(ArrayList < Integer > stockForDates) {
 
         System.out.println("- - - - - - - - \nVamos a elegir un período de tiempo.  ");
         System.out.println("++++++++++\nIngresa un día del 1 al 30: ");
@@ -39,13 +45,10 @@ public class Portfolio {
             } else {
                 System.out.println("Sólo ingresa numeros entre 1 y 30");
             }
-        } catch(InputMismatchException e) {
+        } catch (InputMismatchException e) {
             System.out.println("Sólo números del 1 al 30!");
-
         }
-
     }
-
 
     void stockOperation(int date_1_, int date_2_) {
         if (date_1_ > date_2_) {
@@ -66,11 +69,11 @@ public class Portfolio {
     }
 
     public static void main(String[] args) {
-        while(true) {
+        while (true) {
             Portfolio myPortfolio = new Portfolio();
             System.out.println("$*+*+*+*+* Welcome to my stonks *+*+*+*+*$\nAquí podrás ver lo que has perdido :( y ganado :) ");
             myPortfolio.randomInRange();
-            myPortfolio.Price(stocks);
+            myPortfolio.price(stocks);
         }
     }
 }
