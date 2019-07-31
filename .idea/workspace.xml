@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65f28fd2-2de7-4647-a28a-bf738ae6b930" name="Default Changelist" comment="" />
+    <list default="true" id="65f28fd2-2de7-4647-a28a-bf738ae6b930" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/Portfolio/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Stocks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../IdeaProjects/AAid/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,10 +31,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="537">
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#263#274#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,15 +190,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="743" y="104" width="1682" height="1185" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.11036585" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.11036585" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49470899" visible="true" weight="0.3284538" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49470899" visible="true" weight="0.3284538" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5089216" side_tool="true" weight="0.3993203" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49823633" weight="0.32965165" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -231,67 +226,61 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>169</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>171</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>121</line>
+          <line>127</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>110</line>
+          <line>116</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>131</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>134</line>
+          <line>143</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>136</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>144</line>
+          <line>153</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>146</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>160</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>162</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -303,49 +292,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>197</line>
+          <line>189</line>
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>196</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>195</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>194</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>193</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>182</line>
+          <line>187</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>168</line>
+          <line>157</line>
           <properties class="Portfolio">
             <option name="EMULATED" value="true" />
           </properties>
@@ -430,10 +389,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="537">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#263#274#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
           </folding>
         </state>
       </provider>
