@@ -1,5 +1,4 @@
-import java.lang.reflect.Array;
-import java.text.DateFormat;
+import java.io.PrintStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
@@ -64,18 +63,11 @@ public class Portfolio {
             //the date is separated MM-dd-yyyy (only month and day)
             splitDate(date_1, date_2);
 
-            long amountDays = giveDatesToGetAmmountOfDays(date_1_,date_2_);
-            if (amountDays < 0) {
-                System.out.println("Amount of days " + amountDays*-1);
-            } else {
-                System.out.println("Amount of days " + amountDays);
-            }} catch (ParseException e) {
+
+
+        } catch (ParseException e) {
             System.out.println("Only dates in the indicated format! Don't break the matrix pls.");
         }
-    }
-
-    public static long giveDatesToGetAmmountOfDays(Date date1,Date date2){
-       return ChronoUnit.DAYS.between(date1.toInstant(),date2.toInstant());
     }
 
     //method to separate dates
@@ -110,22 +102,41 @@ public class Portfolio {
             System.out.println("tbd");
         }
         //0 == MM, 1==dd, 2== yyyy
+        fromStringToDate(givenDate1_,givenDate2_);
+        annualizedR(givenDate1_,givenDate2_,setMonth1,setMonth2,Integer.valueOf(splitDate2[1])-1,Integer.valueOf(splitDate2[1])-1,getMonth1,getMonth2);
         periodMonthOperation(setMonth1, setMonth2, Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
+    }
+
+    public static long giveDatesToGetAmmountOfDays(Date date1,Date date2){
+       return ChronoUnit.DAYS.between(date1.toInstant(),date2.toInstant());
+    }
+
+    void fromStringToDate(String stringToDate1, String stringToDate2) throws ParseException {
+        String pattern = "MM-dd-yyyy";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        Date date_1_ = simpleDateFormat.parse(stringToDate1);
+        Date date_2_ = simpleDateFormat.parse(stringToDate2);
+        //printing the formatted dates
+        System.out.println(simpleDateFormat.format(date_1_));
+        System.out.println(simpleDateFormat.format(date_2_));
+        giveDatesToGetAmmountOfDays(date_1_,date_2_);
+
     }
 
     void periodMonthOperation(int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
         System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[]{givenArray_1[getDay_1]}));
         System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[]{givenArray_2[getDay_2]}));
+
+//        fromStringToDate();
         int resultado;
         if (getMonth_1 > getMonth_2) {
-
             resultado = givenArray_1[getDay_1] - givenArray_2[getDay_2];
             if (resultado > 0) {
                 System.out.println("-------------------------------\nIn this period you earned: " + resultado);
             } else {
                 System.out.println("-------------------------------\nIn this period you lost: " + resultado);
             }
-            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
+//            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
 
         } else if (getMonth_1 == getMonth_2) {
             if (getDay_1 > getDay_2) {
@@ -135,8 +146,14 @@ public class Portfolio {
                 } else {
                     System.out.println("-------------------------------\nIn this period you lost: " + resultado);
                 }
-
-            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
+//                annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
+            } else {
+                resultado = givenArray_2[getDay_2] - givenArray_1[getDay_1];
+                if (resultado > 0) {
+                    System.out.println("-------------------------------\nIn this period you earned: " + resultado);
+                } else {
+                    System.out.println("-------------------------------\nIn this period you lost: " + resultado);
+                }
             }
         } else {
             resultado = givenArray_2[getDay_2] - givenArray_1[getDay_1];
@@ -145,14 +162,40 @@ public class Portfolio {
             } else {
                 System.out.println("-------------------------------In this period you lost: " + resultado);
             }
-            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
+//            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
         }
 
     }
-        void annualizedReturn ( int lastAmount, int firstAmount){
-            double performance = (Double.valueOf(lastAmount)/Double.valueOf(firstAmount));
-            double annReturn = (1 + performance) - 1;
-            System.out.println("Tu annualized return in this period is: " + annReturn);
+//        void annualizedReturn ( int lastAmount, int firstAmount){
+//            double performance = (Double.valueOf(lastAmount)/Double.valueOf(firstAmount));
+//            double annReturn = (1 + performance) - 1;
+//            System.out.println("Tu annualized return in this period is: " + annReturn);
+//        }
+
+        public PrintStream annualizedR(String stringToDate1, String stringToDate2, int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
+            String pattern = "MM-dd-yyyy";
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+            Date date_1_ = simpleDateFormat.parse(stringToDate1);
+            Date date_2_ = simpleDateFormat.parse(stringToDate2);
+            //printing the formatted dates
+            System.out.println(simpleDateFormat.format(date_1_));
+            System.out.println(simpleDateFormat.format(date_2_));
+            long daysBetween =  ChronoUnit.DAYS.between(date_1_.toInstant(),date_2_.toInstant());
+
+//            long amountDays = giveDatesToGetAmmountOfDays(date_1_,date_2_);
+
+            if (daysBetween < 0) {
+                System.out.println("Amount of days " + daysBetween*-1);
+                daysBetween = daysBetween*-1;
+            } else {
+                System.out.println("Amount of days " + daysBetween);
+            }
+            //            double daysBetween = 0;
+            double daysToMonths = Double.valueOf(daysBetween)/Double.valueOf(30);
+            double monthsDecimal = (daysToMonths*Double.valueOf(1))/Double.valueOf(365);
+            double performance = (Double.valueOf(givenArray_1[getDay_1])/Double.valueOf(givenArray_2[getDay_2]));
+            double annualReturn = Math.pow((1+performance),monthsDecimal) -1;
+            return System.out.printf("This is your annualized return: " + annualReturn);
         }
 
         public static void main (String[]args) throws ParseException {
