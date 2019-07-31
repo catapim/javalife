@@ -43,16 +43,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="482">
+              <caret line="103" column="5" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="103" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#147#158#0" expanded="true" />
-                <element signature="e#256#267#0" expanded="true" />
+                <element signature="e#234#245#0" expanded="true" />
                 <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Random.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="531" selection-start-line="531" selection-end-line="531" />
+              <folding>
+                <element signature="e#21142#21143#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,10 +90,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="462" />
-    <option name="y" value="24" />
-    <option name="width" value="1987" />
-    <option name="height" value="1336" />
+    <option name="x" value="907" />
+    <option name="y" value="90" />
+    <option name="width" value="1662" />
+    <option name="height" value="1269" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -207,7 +217,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="462" y="24" width="1987" height="1336" extended-state="0" />
+    <frame x="907" y="90" width="1662" height="1269" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -215,20 +225,20 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19125964" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.22962964" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.4838046" weight="0.27009645" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4976526" weight="0.329582" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5167095" side_tool="true" visible="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.44938272" weight="0.2693288" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49717224" weight="0.329582" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5506173" side_tool="true" visible="true" weight="0.44010195" />
+      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.4993827" weight="0.32965165" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49966466" weight="0.329582" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.4832905" visible="true" weight="0.329582" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49966466" weight="0.3995177" />
+      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49814814" weight="0.32880205" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.44938272" visible="true" weight="0.44010195" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49691358" weight="0.3993203" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49966466" weight="0.329582" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.040616967" />
+      <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49876544" weight="0.32880205" />
+      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.048765432" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -238,6 +248,18 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/homework$Portfolio.ic" NAME="Portfolio Coverage Results" MODIFIED="1564524739289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -291,18 +313,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="531" selection-start-line="531" selection-end-line="531" />
+          <folding>
+            <element signature="e#21142#21143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="482">
+          <caret line="103" column="5" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="103" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#147#158#0" expanded="true" />
-            <element signature="e#256#267#0" expanded="true" />
+            <element signature="e#234#245#0" expanded="true" />
             <element signature="e#233#234#0" expanded="true" />
             <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
