@@ -49,10 +49,10 @@ public class Portfolio {
 
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-            System.out.println("- - - - - - - - \nLet's choose a period of time, between 2 dates. ");
-            System.out.println("++++++++++\nPls write a date in this format: 'MM-dd-yyyy': ");
+            System.out.println("-------------------------------\nLet's choose a period of time, between 2 dates. ");
+            System.out.println("-------------------------------\nPls write a date in this format: 'MM-dd-yyyy': ");
             String date_1 = input.nextLine();
-            System.out.println("++++++++++\nPls write a second in the same format: 'MM-dd-yyyy': ");
+            System.out.println("-------------------------------\nPls write a second in the same format: 'MM-dd-yyyy': ");
             String date_2 = input.nextLine();
 
             Date date_1_ = simpleDateFormat.parse(date_1);
@@ -86,7 +86,7 @@ public class Portfolio {
         } else if (setMonth1 == 3) {
             getMonth1 = march;
         } else {
-            System.out.println("nada nada");
+            System.out.println("tbd");
         }
 
         if (setMonth2 == 1) {
@@ -96,40 +96,40 @@ public class Portfolio {
         } else if (setMonth2 == 3) {
             getMonth2 = march;
         } else {
-            System.out.println("nada2 nada2");
+            System.out.println("tbd");
         }
         //0 == MM, 1==dd, 2== yyyy
         periodMonthOperation(setMonth1, setMonth2, Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
     }
 
     void periodMonthOperation(int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
-        System.out.printf("This is your first value selected: " + Arrays.toString(new int[]{givenArray_1[getDay_1]}));
-        System.out.println("this is your second value selected: " + Arrays.toString(new int[]{givenArray_2[getDay_2]}));
+        System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[]{givenArray_1[getDay_1]}));
+        System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[]{givenArray_2[getDay_2]}));
         int resultado;
         if (getMonth_1 > getMonth_2) {
             resultado = givenArray_1[getDay_1] - givenArray_2[getDay_2];
             if (resultado > 0) {
-                System.out.println("In this period you earned: " + resultado);
+                System.out.println("-------------------------------\nIn this period you earned: " + resultado);
             } else {
-                System.out.println("In this period you lost: " + resultado);
+                System.out.println("-------------------------------\nIn this period you lost: " + resultado);
             }
 
         } else if (getMonth_1 == getMonth_2) {
             if (getDay_1 > getDay_2) {
                 resultado = givenArray_1[getDay_1] - givenArray_2[getDay_2];
                 if (resultado > 0) {
-                    System.out.println("In this period you earned: " + resultado);
+                    System.out.println("-------------------------------\nIn this period you earned: " + resultado);
                 } else {
-                    System.out.println("In this period you lost: " + resultado);
+                    System.out.println("-------------------------------\nIn this period you lost: " + resultado);
                 }
             }
         } else {
 
             resultado = givenArray_2[getDay_2] - givenArray_1[getDay_1];
             if (resultado > 0) {
-                System.out.println("In this period you earned: " + resultado);
+                System.out.println("-------------------------------In this period you earned: " + resultado);
             } else {
-                System.out.println("In this period you lost: " + resultado);
+                System.out.println("-------------------------------In this period you lost: " + resultado);
             }
         }
     }
