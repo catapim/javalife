@@ -23,12 +23,7 @@ public class Portfolio {
     public static int[] sep = new int[AMOUNT_DAYS_1];
     public static int[] oct = new int[AMOUNT_DAYS_2];
     public static int[] nov = new int[AMOUNT_DAYS_1];
-    public static int[] dic = new int[AMOUNT_DAYS_2];
-
-    //fill 1 month of stocks
-    public void fillingStocks(int price) {
-        stocks.add(price);
-    }
+    public static int[] dec = new int[AMOUNT_DAYS_2];
 
     //fill the stocks with random numbers between 10000 and 10900
     void randomRangeDailyStocks(int amountDays, int[] givenArray, String monthName_) {
@@ -62,9 +57,6 @@ public class Portfolio {
             System.out.println(simpleDateFormat.format(date_2_));
             //the date is separated MM-dd-yyyy (only month and day)
             splitDate(date_1, date_2);
-
-
-
         } catch (ParseException e) {
             System.out.println("Only dates in the indicated format! Don't break the matrix pls.");
         }
@@ -88,8 +80,24 @@ public class Portfolio {
             getMonth1 = feb;
         } else if (setMonth1 == 3) {
             getMonth1 = march;
+        } else if (setMonth1 == 4) {
+            getMonth1 = apr;
+        } else if (setMonth1 == 5) {
+            getMonth1 = may;
+        } else if (setMonth1 == 6) {
+            getMonth1 = jun;
+        } else if (setMonth1 == 7) {
+            getMonth1 = jul;
+        } else if (setMonth1 == 8) {
+            getMonth1 = aug;
+        } else if (setMonth1 == 9) {
+            getMonth1 = sep;
+        } else if (setMonth1 == 10) {
+            getMonth1 = oct;
+        } else if (setMonth1 == 11) {
+            getMonth1 = nov;
         } else {
-            System.out.println("tbd");
+            getMonth1 = dec;
         }
 
         if (setMonth2 == 1) {
@@ -98,9 +106,26 @@ public class Portfolio {
             getMonth2 = feb;
         } else if (setMonth2 == 3) {
             getMonth2 = march;
+        } else if (setMonth2 == 4) {
+            getMonth2 = apr;
+        } else if (setMonth2 == 5) {
+            getMonth2 = may;
+        } else if (setMonth2 == 6) {
+            getMonth2 = jun;
+        } else if (setMonth2 == 7) {
+            getMonth2 = jul;
+        } else if (setMonth2 == 8) {
+            getMonth2 = aug;
+        } else if (setMonth2 == 9) {
+            getMonth2 = sep;
+        } else if (setMonth2 == 10) {
+            getMonth2 = oct;
+        } else if (setMonth2 == 11) {
+            getMonth2 = nov;
         } else {
-            System.out.println("tbd");
+            getMonth2 = dec;
         }
+
         //0 == MM, 1==dd, 2== yyyy
         fromStringToDate(givenDate1_, givenDate2_);
         annualizedR(givenDate1_, givenDate2_, setMonth1, setMonth2, Integer.valueOf(splitDate2[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
@@ -123,24 +148,21 @@ public class Portfolio {
 
     }
 
-    void periodMonthOperation(int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
-        System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[] {
-                givenArray_1[getDay_1]
-        }));
-        System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[] {
-                givenArray_2[getDay_2]
-        }));
+    int periodMonthOperation(int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
+        System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[] {givenArray_1[getDay_1]}));
+        System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[] {givenArray_2[getDay_2]}));
 
-        //        fromStringToDate();
         int resultado;
+
         if (getMonth_1 > getMonth_2) {
+
             resultado = givenArray_1[getDay_1] - givenArray_2[getDay_2];
+//            int overallReturn = (givenArray_1[getDay_1] - givenArray_2[getDay_2])/givenArray_1[getDay_1];
             if (resultado > 0) {
                 System.out.println("-------------------------------\nIn this period you earned: " + resultado);
             } else {
                 System.out.println("-------------------------------\nIn this period you lost: " + resultado);
             }
-            //            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
 
         } else if (getMonth_1 == getMonth_2) {
             if (getDay_1 > getDay_2) {
@@ -150,31 +172,33 @@ public class Portfolio {
                 } else {
                     System.out.println("-------------------------------\nIn this period you lost: " + resultado);
                 }
-                //                annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
+//               int overallReturn = (givenArray_1[getDay_1] - givenArray_2[getDay_2])/givenArray_1[getDay_1];
+
+
             } else {
                 resultado = givenArray_2[getDay_2] - givenArray_1[getDay_1];
+//                int overallReturn = (givenArray_2[getDay_2] - givenArray_1[getDay_1])/givenArray_1[getDay_1];
                 if (resultado > 0) {
                     System.out.println("-------------------------------\nIn this period you earned: " + resultado);
                 } else {
                     System.out.println("-------------------------------\nIn this period you lost: " + resultado);
                 }
             }
+
         } else {
             resultado = givenArray_2[getDay_2] - givenArray_1[getDay_1];
+//           int overallReturn = (givenArray_2[getDay_2] - givenArray_1[getDay_1])/givenArray_1[getDay_1];
+
             if (resultado > 0) {
                 System.out.println("-------------------------------In this period you earned: " + resultado);
             } else {
                 System.out.println("-------------------------------In this period you lost: " + resultado);
             }
-            //            annualizedReturn(givenArray_1[getDay_1],givenArray_2[getDay_2]);
         }
-
+        return resultado;
     }
-    //        void annualizedReturn ( int lastAmount, int firstAmount){
-    //            double performance = (Double.valueOf(lastAmount)/Double.valueOf(firstAmount));
-    //            double annReturn = (1 + performance) - 1;
-    //            System.out.println("Tu annualized return in this period is: " + annReturn);
-    //        }
+
+
 
     public PrintStream annualizedR(String stringToDate1, String stringToDate2, int getMonth_1, int getMonth_2, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
         String pattern = "MM-dd-yyyy";
@@ -186,28 +210,64 @@ public class Portfolio {
         System.out.println(simpleDateFormat.format(date_2_));
         long daysBetween = ChronoUnit.DAYS.between(date_1_.toInstant(), date_2_.toInstant());
 
-        //            long amountDays = giveDatesToGetAmmountOfDays(date_1_,date_2_);
-
         if (daysBetween < 0) {
             System.out.println("Amount of days " + daysBetween * -1);
             daysBetween = daysBetween * -1;
         } else {
             System.out.println("Amount of days " + daysBetween);
         }
-        //            double daysBetween = 0;
-        double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(30);
-        double monthsDecimal = (daysToMonths * Double.valueOf(1)) / Double.valueOf(365);
-        double performance = (Double.valueOf(givenArray_1[getDay_1]) / Double.valueOf(givenArray_2[getDay_2]));
-        double annualReturn = Math.pow((1 + performance), monthsDecimal) - 1;
+
+        int AVG_DAYS_MONTH = 30;
+        double guess = 1.10;
+        int initInvestment = 10000;
+        //        double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(AVG_DAYS_MONTH);
+        //        double monthsDecimal = (daysToMonths * Double.valueOf(1)) / Double.valueOf(365);
+        //        double performance = (Double.valueOf(givenArray_1[getDay_1]) / Double.valueOf(givenArray_2[getDay_2]));
+        //        double annualReturn = Math.pow((1 + performance), monthsDecimal) - 1;
+
+        //        double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(AVG_DAYS_MONTH);
+        //        double monthsDecimal = (daysToMonths*AVG_DAYS_MONTH)/365;
+        //        double guessPower = Math.pow(guess,monthsDecimal);
+        //        double firstNumberGuess = Double.valueOf(givenArray_1[getDay_1])/(Math.pow(guess,monthsDecimal));
+        //        double secondNumberGuess = Double.valueOf(givenArray_2[getDay_2])/(Math.pow(guess,monthsDecimal*monthsDecimal));
+        //        double performance = (Double.valueOf(givenArray_1[getDay_1]) / Double.valueOf(givenArray_2[getDay_2]));
+        //        double annualReturn = (firstNumberGuess+secondNumberGuess)-initInvestment;
+
+        //        double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(AVG_DAYS_MONTH);
+        //        double monthsDecimal = (daysToMonths * Double.valueOf(1)) / Double.valueOf(365);
+        //        double performance = (Double.valueOf(givenArray_1[getDay_1]) / Double.valueOf(givenArray_2[getDay_2]));
+        //        double annualReturn = Math.pow((1 + performance), monthsDecimal) - 1;
+        //        myprecius
+                double profitOrLoose = Double.valueOf(givenArray_2[getDay_2]-givenArray_1[getDay_1])/Double.valueOf(givenArray_1[getDay_1]);
+        //       System.out.println("DEBO COINDIRI: " + resultado);
+                double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(AVG_DAYS_MONTH);
+                double monthsDecimal = (daysToMonths*AVG_DAYS_MONTH)/365;
+                double guessPower = Math.pow(guess,monthsDecimal);
+                double firstNumberGuess = Double.valueOf(givenArray_1[getDay_1])/(Math.pow(guess,monthsDecimal));
+                double secondNumberGuess = Double.valueOf(givenArray_2[getDay_2])/(Math.pow(guess,monthsDecimal*monthsDecimal));
+                double performance = (Double.valueOf(givenArray_1[getDay_1]) / Double.valueOf(givenArray_2[getDay_2]));
+                double annualReturn = ((Math.pow(1+profitOrLoose,monthsDecimal))-1)*100;
+
         return System.out.printf("This is your annualized return: " + annualReturn);
     }
 
     public static void main(String[] args) throws ParseException {
         Portfolio myPortfolio = new Portfolio();
         System.out.println("Cargando tus stonks...");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jan, "enero");
-        myPortfolio.randomRangeDailyStocks(FEBRUARY_DAYS, feb, "febrero");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, march, "marzo");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jan, "January");
+        myPortfolio.randomRangeDailyStocks(FEBRUARY_DAYS, feb, "February");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, march, "March");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, apr, "April");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, may, "May");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, jun, "Jun");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jul, "July");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, aug, "August");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, sep, "September");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, oct, "October");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, nov, "September");
+        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, dec, "October");
+
         myPortfolio.getUserDates();
+
     }
 }
