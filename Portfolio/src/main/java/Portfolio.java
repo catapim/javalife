@@ -1,9 +1,9 @@
 import java.io.PrintStream;
-import java.lang.reflect.Array;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -34,33 +34,11 @@ public class Portfolio {
             int randomInteger = (int) randomDouble;
             givenArray[i] = randomInteger;
         }
-
         int[] dayNumber = new int[givenArray.length];
-
-        String[] dayWord = new String[givenArray.length];
-        for (int i = 0; i < givenArray.length; i++) {
-            dayNumber[i] = i;
-            dayWord[i] = String.valueOf(dayNumber);
-        }
-
-        for (int i = 0; i < givenArray.length; i++) {
-            System.out.print("Día " + i);
-        }
-
+        System.out.print("These are your stocks from: " + monthName_ + ". ");
+        System.out.println("This month has " + givenArray.length + " days. ");
+        System.out.println(Arrays.toString(givenArray));
         System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-        System.out.println("These are your stocks from: " + monthName_);
-        for (int i = 1; i < givenArray.length+1; i++) {
-            System.out.print(" Day " + i + " ");
-        }
-        System.out.println("\n" + Arrays.toString(givenArray));
-        System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ");
-
-
-
-    }
-
-    void printDates(int[] givenArray){
-
     }
 
     //asks for 2 dates, to get a period of time.
@@ -70,9 +48,9 @@ public class Portfolio {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
             System.out.println("- - - - - - - - - - - - - - - - - - - - - - - - - - \nLet's choose a period of time, between 2 dates. ");
-            System.out.println("-------------------------------\nPls write a date in this format: 'MM-dd-yyyy': ");
+            System.out.println("\nWrite a date in this format: 'MM-dd-yyyy': ");
             String date_1 = input.nextLine();
-            System.out.println("-------------------------------\nPls write a second in the same format: 'MM-dd-yyyy': ");
+            System.out.println("\nWrite a second in the same format: 'MM-dd-yyyy': ");
             String date_2 = input.nextLine();
 
             Date date_1_ = simpleDateFormat.parse(date_1);
@@ -82,7 +60,6 @@ public class Portfolio {
                 System.out.println("Second date must be LATER than the first date. Please try again");
                 getUserDates();
             }
-
             //printing the formatted dates
             System.out.println("These are your dates: ");
             System.out.println(simpleDateFormat.format(date_1_));
@@ -161,7 +138,6 @@ public class Portfolio {
         return betweenDays;
     }
 
-
     double profit(int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) {
         int lastValue = givenArray_2[getDay_2];
         int firstValue = givenArray_1[getDay_1];
@@ -188,58 +164,56 @@ public class Portfolio {
         double monthsDecimal = (daysToMonths * AVG_DAYS_MONTH) / 365;
         double annualReturn = ((Math.pow(1 + profit, (1 / monthsDecimal))) - 1);
 
-        if (daysBetween < 0 ) {
-            System.out.println("This is the amount of days between those dates: " + daysBetween*-1);
+        if (daysBetween < 0) {
+            System.out.println("This is the amount of days between those dates: " + daysBetween * -1);
         } else {
             System.out.println("This is the amount of days between those dates: " + daysBetween);
         }
         System.out.printf("Those days are equivalent to %.2f years. \n", monthsDecimal);
         if (daysToMonths < 0) {
-            System.out.printf("Or the equivalent to to %.2f months if we use %d as an average of days per month. \n", daysToMonths*-1, AVG_DAYS_MONTH);
+            System.out.printf("Or the equivalent to to %.2f months if we use %d as an average of days per month. \n", daysToMonths * -1, AVG_DAYS_MONTH);
 
         } else {
             System.out.printf("Or the equivalent to to %.2f months if we use %d as an average of days per month. \n", daysToMonths, AVG_DAYS_MONTH);
-
         }
-
         return System.out.printf("This is your annualized return: %.3f%%%n", annualReturn);
     }
 
     public static void main(String[] args) throws ParseException {
-        Portfolio myPortfolio = new Portfolio();
-        System.out.println("Hello human, welcome to your stocks...");
+        while (true) {
+            Portfolio myPortfolio = new Portfolio();
+            System.out.println("\n Hello human, welcome to your stocks...");
 
-        System.out.println("               |))    |))\n" +
-                " .             |  )) /   ))\n" +
-                " \\\\   ^ ^      |    /      ))\n" +
-                "  \\\\(((  )))   |   /        ))\n" +
-                "   / G    )))  |  /        ))\n" +
-                "  |o  _)   ))) | /       )))\n" +
-                "   --' |     ))`/      )))\n" +
-                "    ___|              )))\n" +
-                "   / __\\             ))))`()))\n" +
-                "  /\\@   /             `(())))\n" +
-                "  \\/   /  /`_______/\\   \\  ))))\n" +
-                "       | |          \\ \\  |  )))\n" +
-                "       | |           | | |   )))\n" +
-                "       |_@           |_|_@    ))\n" +
-                "      /_/           /_/_/\n" +
-                " ");
-
-
-        System.out.println("...Getting your stonks...  ");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jan, "January");
-        myPortfolio.randomRangeDailyStocks(FEBRUARY_DAYS, feb, "February");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, march, "March");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, apr, "April");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, may, "May");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, jun, "Jun");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jul, "July");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, aug, "August");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, sep, "September");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, oct, "October");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, nov, "November");
-        myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, dec, "December");
-        myPortfolio.getUserDates();
+            System.out.println("               |))    |))\n" +
+                    " .             |  )) /   ))\n" +
+                    " \\\\   ^ ^      |    /      ))\n" +
+                    "  \\\\(((  )))   |   /        ))\n" +
+                    "   / G    )))  |  /        ))\n" +
+                    "  |o  _)   ))) | /       )))\n" +
+                    "   --' |     ))`/      )))\n" +
+                    "    ___|              )))\n" +
+                    "   / __\\             ))))`()))\n" +
+                    "  /\\@   /             `(())))\n" +
+                    "  \\/   /  /`_______/\\   \\  ))))\n" +
+                    "       | |          \\ \\  |  )))\n" +
+                    "       | |           | | |   )))\n" +
+                    "       |_@           |_|_@    ))\n" +
+                    "      /_/           /_/_/\n" +
+                    " ");
+            System.out.println("...Getting your stonks...  ");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jan, "January");
+            myPortfolio.randomRangeDailyStocks(FEBRUARY_DAYS, feb, "February");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, march, "March");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, apr, "April");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, may, "May");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, jun, "Jun");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, jul, "July");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, aug, "August");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, sep, "September");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, oct, "October");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_1, nov, "November");
+            myPortfolio.randomRangeDailyStocks(AMOUNT_DAYS_2, dec, "December");
+            myPortfolio.getUserDates();
+        }
     }
 }

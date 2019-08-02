@@ -4,6 +4,7 @@
     <list default="true" id="65f28fd2-2de7-4647-a28a-bf738ae6b930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Portfolio/target/classes/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/target/classes/Portfolio.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Portfolio/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state relative-caret-position="450">
+              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>10584</find>
       <find>10786</find>
       <find>10004</find>
       <find>10098</find>
@@ -91,6 +91,7 @@
       <find>days</find>
       <find>arrays</find>
       <find>these</find>
+      <find>getmon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,9 +107,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="722" />
+    <option name="x" value="839" />
     <option name="y" value="104" />
-    <option name="width" value="1702" />
+    <option name="width" value="1585" />
     <option name="height" value="1185" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -188,7 +189,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="722" y="104" width="1702" height="1185" extended-state="0" />
+    <frame x="839" y="104" width="1585" height="1185" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -196,19 +197,19 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.11746988" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.12637718" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49216866" weight="0.3284538" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.6180723" side_tool="true" visible="true" weight="0.2808783" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49060273" weight="0.3284538" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5197667" side_tool="true" visible="true" weight="0.3083257" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49727857" weight="0.3284538" />
-      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49698794" weight="0.3293687" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.3819277" visible="true" weight="0.2808783" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.48253012" weight="0.3083257" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49578744" weight="0.3293687" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.37394685" weight="0.41537055" />
+      <window_info active="true" anchor="bottom" id="Debug" order="6" sideWeight="0.4802333" visible="true" weight="0.3083257" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49823633" weight="0.32880205" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.37289158" weight="0.26898444" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.36357746" weight="0.26898444" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -225,61 +226,35 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>204</line>
+          <line>180</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>174</line>
+          <line>152</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>175</line>
+          <line>153</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>163</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>176</line>
+          <line>154</line>
           <properties class="Portfolio">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>29</line>
-          <properties class="Portfolio" method="randomRangeDailyStocks">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -338,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        <state relative-caret-position="450">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
