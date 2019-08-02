@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65f28fd2-2de7-4647-a28a-bf738ae6b930" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Portfolio/target/" />
@@ -31,8 +32,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="510">
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -40,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Formatter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="39600">
               <caret line="2719" column="12" selection-start-line="2719" selection-start-column="12" selection-end-line="2719" selection-end-column="12" />
             </state>
           </provider>
@@ -57,9 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>array</find>
-      <find>givenarray</find>
-      <find>10307</find>
       <find>10584</find>
       <find>10786</find>
       <find>10004</find>
@@ -87,6 +88,9 @@
       <find>value sele</find>
       <find>profit</find>
       <find>this is</find>
+      <find>days</find>
+      <find>arrays</find>
+      <find>these</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,8 +117,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,6 +128,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,19 +196,19 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.11626506" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.11746988" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4939759" visible="true" weight="0.3284538" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5060241" side_tool="true" visible="true" weight="0.3284538" />
-      <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49823633" weight="0.32965165" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49727857" weight="0.3284538" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.41385543" weight="0.31381518" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.48342374" weight="0.3083257" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49216866" weight="0.3284538" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.6180723" side_tool="true" visible="true" weight="0.2808783" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" sideWeight="0.49727857" weight="0.3284538" />
+      <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49698794" weight="0.3293687" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.3819277" visible="true" weight="0.2808783" />
+      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.48253012" weight="0.3083257" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49823633" weight="0.32880205" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.40542167" weight="0.26898444" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.37289158" weight="0.26898444" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -221,35 +225,61 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>163</line>
+          <line>204</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>144</line>
+          <line>174</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>145</line>
+          <line>175</line>
           <properties />
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>133</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>146</line>
+          <line>176</line>
           <properties class="Portfolio">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>29</line>
+          <properties class="Portfolio" method="randomRangeDailyStocks">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -272,16 +302,6 @@
     <entry file="file://$PROJECT_DIR$/A/aAID/src/main/java/aID/App.java" />
     <entry file="file://$PROJECT_DIR$/Portfolio.java" />
     <entry file="file://$PROJECT_DIR$/Stocks.java" />
-    <entry file="file://$PROJECT_DIR$/../IdeaProjects/AAid/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="27" column="43" selection-start-line="27" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
@@ -299,17 +319,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../IdeaProjects/AAid/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="43" selection-start-line="27" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Formatter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="39600">
           <caret line="2719" column="12" selection-start-line="2719" selection-start-column="12" selection-end-line="2719" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="510">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
