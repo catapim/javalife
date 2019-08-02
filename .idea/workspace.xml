@@ -4,7 +4,6 @@
     <list default="true" id="65f28fd2-2de7-4647-a28a-bf738ae6b930" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Portfolio/target/classes/Portfolio.class" beforeDir="false" afterPath="$PROJECT_DIR$/Portfolio/target/classes/Portfolio.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Portfolio/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,33 +32,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
+            <state relative-caret-position="182">
+              <caret line="182" selection-start-line="182" selection-end-line="182" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#263#274#0" expanded="true" />
-                <marker date="1564640536137" expanded="true" signature="7477:7585" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4740">
-              <caret line="365" column="18" selection-start-line="365" selection-start-column="18" selection-end-line="365" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Random.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7320">
-              <caret line="531" selection-start-line="531" selection-end-line="531" />
-              <folding>
-                <element signature="e#21142#21143#0" expanded="true" />
+                <element signature="e#3411#3451#1" />
               </folding>
             </state>
           </provider>
@@ -93,6 +70,14 @@
       <find>Date</find>
       <find>split</find>
       <find>splitdate</find>
+      <find>system.out.println</find>
+      <find>system.out</find>
+      <find>resulta</find>
+      <find>resultado</find>
+      <find>gived</find>
+      <find>-</find>
+      <find>-1</find>
+      <find>- 1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,9 +93,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1171" />
+    <option name="x" value="361" />
     <option name="y" value="104" />
-    <option name="width" value="1253" />
+    <option name="width" value="2063" />
     <option name="height" value="1185" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -120,6 +105,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,7 +117,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,27 +175,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1171" y="104" width="1253" height="1185" extended-state="0" />
-    <editor active="true" />
+    <frame x="361" y="104" width="2063" height="1185" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15194054" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.09549728" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49470899" weight="0.3284538" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5089216" side_tool="true" weight="0.3993203" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5155863" side_tool="true" visible="true" weight="0.4611162" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49823633" weight="0.32965165" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49814814" weight="0.32880205" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.42857143" visible="true" weight="0.34858188" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.49107835" weight="0.39890212" />
+      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49727857" weight="0.3284538" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.42751113" weight="0.19213174" />
+      <window_info active="true" anchor="bottom" id="Debug" order="6" sideWeight="0.48441365" visible="true" weight="0.4611162" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49823633" weight="0.32880205" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.42768958" weight="0.26898444" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.41959426" weight="0.26898444" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -227,57 +211,77 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>231</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>228</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>227</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>240</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>248</line>
+          <line>180</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>242</line>
+          <line>178</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>243</line>
+          <line>179</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>232</line>
+          <line>177</line>
           <properties />
-          <option name="timeStamp" value="49" />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>157</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>160</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
+          <line>167</line>
+          <properties class="Portfolio" method="annualizedR">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -288,7 +292,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework$Portfolio.ic" NAME="Portfolio Coverage Results" MODIFIED="1564638500068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/homework$Portfolio.ic" NAME="Portfolio Coverage Results" MODIFIED="1564724349192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Ventas.java" />
@@ -310,16 +314,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4740">
-          <caret line="365" column="18" selection-start-line="365" selection-start-column="18" selection-end-line="365" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Random.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7320">
+        <state relative-caret-position="722">
           <caret line="531" selection-start-line="531" selection-end-line="531" />
           <folding>
             <element signature="e#21142#21143#0" expanded="true" />
@@ -327,14 +324,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="365" column="18" selection-start-line="365" selection-start-column="18" selection-end-line="365" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
+        <state relative-caret-position="182">
+          <caret line="182" selection-start-line="182" selection-end-line="182" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#263#274#0" expanded="true" />
-            <marker date="1564640536137" expanded="true" signature="7477:7585" ph="..." />
+            <element signature="e#3411#3451#1" />
           </folding>
         </state>
       </provider>
