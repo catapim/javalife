@@ -31,11 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="165" column="81" selection-start-line="165" selection-start-column="81" selection-end-line="165" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -197,17 +194,17 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.11626506" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49430975" weight="0.3284538" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.58433735" side_tool="true" visible="true" weight="0.31381518" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4939759" visible="true" weight="0.3284538" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5060241" side_tool="true" visible="true" weight="0.3284538" />
       <window_info anchor="bottom" id="Version Control" order="2" sideWeight="0.49823633" weight="0.32965165" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49727857" weight="0.3284538" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.41566265" visible="true" weight="0.31381518" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.41385543" weight="0.31381518" />
       <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.48342374" weight="0.3083257" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" sideWeight="0.49823633" weight="0.32880205" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.40722892" weight="0.26898444" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.40542167" weight="0.26898444" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -224,21 +221,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>161</line>
+          <line>163</line>
           <properties />
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>160</line>
-          <properties />
-          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
@@ -254,14 +239,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>135</line>
+          <line>133</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java</url>
-          <line>148</line>
-          <properties class="Portfolio" method="annualizedR">
+          <line>146</line>
+          <properties class="Portfolio">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="51" />
@@ -323,11 +308,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Portfolio/src/main/java/Portfolio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="165" column="81" selection-start-line="165" selection-start-column="81" selection-end-line="165" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

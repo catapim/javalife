@@ -2,11 +2,9 @@ import java.io.PrintStream;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.temporal.ChronoUnit;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
-import java.math.BigDecimal;
 
 public class Portfolio {
 
@@ -43,7 +41,6 @@ public class Portfolio {
     void getUserDates() throws ParseException {
         Scanner input = new Scanner(System.in);
         String pattern = "MM-dd-yyyy";
-
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
             System.out.println("-------------------------------\nLet's choose a period of time, between 2 dates. ");
@@ -51,7 +48,6 @@ public class Portfolio {
             String date_1 = input.nextLine();
             System.out.println("-------------------------------\nPls write a second in the same format: 'MM-dd-yyyy': ");
             String date_2 = input.nextLine();
-
             Date date_1_ = simpleDateFormat.parse(date_1);
             Date date_2_ = simpleDateFormat.parse(date_2);
             //printing the formatted dates
@@ -59,8 +55,7 @@ public class Portfolio {
             System.out.println(simpleDateFormat.format(date_1_));
             System.out.println(simpleDateFormat.format(date_2_));
             //the date is separated MM-dd-yyyy (only month and day)
-            splitDate(date_1,date_2,date_1_,date_2_);
-
+            splitDate(date_1, date_2, date_1_, date_2_);
         } catch (ParseException e) {
             System.out.println("Only dates in the indicated format! Don't break the matrix pls.");
         }
@@ -68,13 +63,9 @@ public class Portfolio {
 
     //method to separate dates
     long splitDate(String givenDate1_, String givenDate2_, Date date_1, Date date_2) throws ParseException {
-
         long betweenDays = ChronoUnit.DAYS.between(date_1.toInstant(), date_2.toInstant());
-
         String[] splitDate1 = givenDate1_.split("-");
         String[] splitDate2 = givenDate2_.split("-");
-//        System.out.println(Arrays.toString(splitDate1));
-//        System.out.println(Arrays.toString(splitDate2));
         //0 == MM, 1==dd, 2== yyyy
         int[] getMonth1;
         int[] getMonth2;
@@ -133,37 +124,41 @@ public class Portfolio {
         } else {
             getMonth2 = dec;
         }
-        double profit_ = profit( Integer.valueOf(splitDate1[1])-1, Integer.valueOf(splitDate2[1])-1, getMonth1, getMonth2);
-        annualizedR(betweenDays,Integer.valueOf(splitDate1[1])-1,Integer.valueOf(splitDate2[1])-1,getMonth1,getMonth2);
+        double profit_ = profit(Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
+        annualizedR(betweenDays, Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
         return betweenDays;
     }
 
 
-    double profit(int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2){
+    double profit(int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) {
         int lastValue = givenArray_2[getDay_2];
         int firstValue = givenArray_1[getDay_1];
-        double profit_ = (Double.valueOf(lastValue)-Double.valueOf(firstValue))/Double.valueOf(firstValue);
+        double profit_ = (Double.valueOf(lastValue) - Double.valueOf(firstValue)) / Double.valueOf(firstValue);
         return profit_;
     }
 
     public PrintStream annualizedR(long amountOfDays, int getDay_1, int getDay_2, int[] givenArray_1, int[] givenArray_2) throws ParseException {
-        System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[] {givenArray_1[getDay_1]}));
-        System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[] {givenArray_2[getDay_2]}));
+        System.out.printf("\nThis is your first value selected: " + Arrays.toString(new int[] {
+                givenArray_1[getDay_1]
+        }));
+        System.out.println("\nThis is your second value selected: " + Arrays.toString(new int[] {
+                givenArray_2[getDay_2]
+        }));
         long daysBetween = amountOfDays;
         int AVG_DAYS_MONTH = 30;
-        double profit = profit(getDay_1,getDay_2,givenArray_1,givenArray_2);
+        double profit = profit(getDay_1, getDay_2, givenArray_1, givenArray_2);
         if (profit > 0) {
             System.out.printf("In this period you earned:%.3f%%%n", profit);
         } else {
             System.out.printf("In this period you lost:%.3f%%%n", profit);
         }
         double daysToMonths = Double.valueOf(daysBetween) / Double.valueOf(AVG_DAYS_MONTH);
-        double monthsDecimal = (daysToMonths*AVG_DAYS_MONTH)/365;
-        double annualReturn = ((Math.pow(1+profit,(1/monthsDecimal))) - 1 );
+        double monthsDecimal = (daysToMonths * AVG_DAYS_MONTH) / 365;
+        double annualReturn = ((Math.pow(1 + profit, (1 / monthsDecimal))) - 1);
 
         System.out.println("This is the amount of days between those dates: " + daysBetween);
         System.out.printf("Those days are equivalent to %.2f years. \n", monthsDecimal);
-        System.out.printf("Or the equivalent to to %.2f months if we use %d as an average of days per month. \n", daysToMonths,AVG_DAYS_MONTH);
+        System.out.printf("Or the equivalent to to %.2f months if we use %d as an average of days per month. \n", daysToMonths, AVG_DAYS_MONTH);
         return System.out.printf("This is your annualized return: %.3f%%%n", annualReturn);
     }
 
