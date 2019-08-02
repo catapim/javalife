@@ -124,7 +124,6 @@ public class Portfolio {
         } else {
             getMonth2 = dec;
         }
-        double profit_ = profit(Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
         annualizedR(betweenDays, Integer.valueOf(splitDate1[1]) - 1, Integer.valueOf(splitDate2[1]) - 1, getMonth1, getMonth2);
         return betweenDays;
     }
